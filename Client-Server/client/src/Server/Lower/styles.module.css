@@ -1,0 +1,97 @@
+@import 'vars.css';
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(2,1fr) / max-content 1fr;
+  grid-column-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.packets {
+  grid-area: 1/1/2/2;
+  color: var(--c-g);
+  font-size: 10rem;
+}
+
+.vulnerability {
+  grid-area: 2/1/3/2;
+  color: var(--c-r);
+  font-size: 10rem;
+}
+
+.categories {
+  grid-row: 1/2/2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subcategories {
+  grid-row: 2/2/3/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cat_box {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.cat_box:hover {
+  border: 1px solid #F76E11;
+  border-radius: 10px;
+}
+
+.cat_box_selected {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #F76E11;
+  border-radius: 10px;
+}
+
+.cat_name {
+  font-size: 3rem;
+  color: #F76E11;
+  margin-bottom: 1rem;
+}
+
+.cat_val {
+  color: white;
+  font-size: 3rem;
+}
+
+.sub_box {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sub_box:hover {
+  border: 1px solid #FFE61B;
+  border-radius: 10px;
+}
+
+.sub_box_selected {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #FFE61B;
+  border-radius: 10px;
+}
+
+.sub_name {
+  font-size: 1.5rem;
+  color: #FFE61B;
+  margin-bottom: 1rem;
+}
+
+.sub_val {
+  color: white;
+  font-size: 1.5rem;
+}

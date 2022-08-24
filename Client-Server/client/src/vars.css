@@ -1,0 +1,15 @@
+:root {
+
+--c-g: #00b712f3;
+--c-g-d: #00b712bb;
+--c-r: #f9484a;
+--c-r-d: #f9484bc7;
+
+--g-g-bi: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+--g-o-bi: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+--g-r-bi: linear-gradient(to right, #ed213a, #93291e); 
+--g-r-r-bi: linear-gradient(to left, #ed213a, #93291e); 
+
+--gray: #34495e;
+--darkgray: #2c3e50;
+}

@@ -1,0 +1,54 @@
+@import 'vars.css';
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  min-height: 0;
+  min-width: 0; 
+}
+
+.col1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-width: 0; 
+  grid-column: 1/2;
+  grid-row: 1/2 ;
+  background: var(--g-g-bi);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.col2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-width: 0; 
+  grid-column: 2/3;
+  grid-row: 1/2 ;
+  background: var(--g-o-bi);
+  
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.col1, .col2 {
+  cursor: pointer;
+}
+
+.col1:hover > .title, .col2:hover>.title {
+  transform: scale(1.2);
+}
+
+.title {
+  color: white;
+  font-size: 10rem;  
+  transition: transform ease .5s;
+}
